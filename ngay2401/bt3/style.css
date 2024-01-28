@@ -1,0 +1,11 @@
+.row{
+        display: inline;
+}
+col-4{
+        width: 60px;
+        height: 70px;
+        display: inline;
+        justify-content: space-between;
+        align-items: center;
+}       
+      
