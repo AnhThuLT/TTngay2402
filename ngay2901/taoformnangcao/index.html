@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Tờ khai y tế</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form action="/submit" method="post">
+    <h1 style="text-align: center;">Tờ khai y tế</h1>
+    <div style="text-align: center;">
+        <p>
+            <b >ĐÂY LÀ TÀI LIỆU QUAN TRỌNG, THÔNG TIN CỦA ANH/CHỊ SẼ GIÚP CƠ QUAN Y TẾ LIÊN LẠC KHI CẦN THIẾT ĐỂ PHÒNG CHỐNG DỊCH BỆNH TRUYỀN NHIỄM </b>
+        </p>
+    </div>
+    
+    <p class="warning">
+        <B>
+            Khuyến cáo: Khai báo thông tin sai là vi phạm pháp luật Việt Nam và có thể xử lý hình sự
+        </B>
+    </p>
+    <div class="form">
+      <label for="fullname">Họ tên (ghi chữ IN HOA)</label>
+      <input type="text" class="form-control" id="fullname" name="fullname" required>
+    </div>
+    <div class="form-group">
+      <label for="year-of-birth">Năm sinh</label>
+      <input type="year" class="form-control" id="year-of-birth" name="year-of-birth" required>
+    </div>
+    <div class="form-group">
+      <label for="gender">Giới tính</label>
+      <select class="form-control" id="gender" name="gender">
+        <option value="nam">Nam</option>
+        <option value="nữ">Nữ</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="nationality">Quốc tịch</label>
+      <select class="form-control" id="nationality" name="nationality">
+        <option value="Việt Nam">Việt Nam</option>
+        <option value="Khác">Khác</option>
+      </select>
+    </div>
+    <div class="form">
+      <label for="passport-or-id-number">Số hộ chiếu hoặc số CMND hoặc giấy thông hành hợp pháp khác</label>
+      <input type="text" class="form-control" id="passport-or-id-number" name="passport-or-id-number" required>
+    </div>
+    <div class="form-group">
+      <label for="travel-information">Thông tin đi lại</label><br><BR>
+      <input type="radio" name="travel-information">Tàu bay
+      <input type="radio" name="travel-information">Tàu thuyền 
+      <input type="radio" name="travel-information">Ô tô
+      <input type="radio" name="travel-information">Khác (ghi rõ)
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="vehicle-number" >Số hiệu phương tiện </label> 
+      <input type="text" class="form-control" id="vehicle-number" name="vehicle-number" placeholder ="VD:VN123">
+    </div>
+    <div class="form-group">
+      <label for="seat-number">Số ghế</label>
+      <input type="number" class="form-control" id="seat-number" name="seat-number">
+    </div><br>
+
+    <table>
+      <thead>
+        <tr>
+        </tr>
+      </thead>
+      <tr >
+        <td>
+          Ngày khởi hành :
+        </td>
+      </tr>
+      
+      <tr>
+        <th style="margin-right: 100px;">
+          <input type="number"placeholder="2" >
+          <input type="number" placeholder="12">
+          <input type="year"placeholder="2020" >
+        </th>
+      </tr>  
+        
+      
+      <tr style="width: 500px;">
+        <td>
+          Ngày kết thúc :
+        </td>
+      </tr>
+      
+        <tr>
+          <td>
+            <input type="number"placeholder="2" >
+            <input type="number" placeholder="12">
+            <input type="year"placeholder="2020" >
+          </td>
+
+        </tr>
+
+    </table>
+
+
+
+   
+    <br>
+    <button type="submit" class="btn btn-primary">Gửi tờ khai</button>
+  </form>
+</body>
+</html>

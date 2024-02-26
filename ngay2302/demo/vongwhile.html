@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        cho người nhâp vào 1 số ktr chẵn lẽ
+        hđ dừng lại khi người dùng nhập kí tự Q
+        */
+       let input =' '
+       while(input!=='q'){
+        input = prompt("Nhập số cần ktr")
+        if(input!=='q'){
+            if(input%2==0){
+            alert("bạn đã nhập số chẳn")
+        }else {
+            alert("bạn đã nhập số lẻ")
+        }
+        }else{
+            alert("bạn đã dừng ctr")
+        }
+        
+
+       }
+    </script>
+</body>
+</html>

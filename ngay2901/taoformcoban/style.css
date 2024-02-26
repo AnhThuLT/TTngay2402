@@ -1,0 +1,21 @@
+.form{
+    width: 30%;
+    height: 100%;
+    border: rgb(132, 123, 123);
+    background-color: rgb(132, 123, 123);
+}
+.nut{
+    width: 50%;
+    margin-left: 30%;
+    display: inline;
+}
+.thang label {
+    display: inline-block;
+    width: 100px; 
+    text-align: right;
+    margin-right: 10px; 
+}
+.thang input,
+.thang select {
+    width: 200px; 
+}

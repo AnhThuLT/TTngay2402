@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let a = parseInt(prompt("Nhập vào số a cần kiểm tra :"));
+        let b = parseInt(prompt("Nhập vào số b cần kiểm tra :"));
+        let c = parseInt(prompt("Nhập vào số c cần kiểm tra :"));
+        if(a == 0) {
+		if(b == 0) {
+			if(c == 0) {
+				alert('Phuong trinh VSN')
+			} else {
+				alert('Phuong trinh VN')
+			}
+		} else {
+			x = -c/b
+			alert('Nghiem phuong trinh x = ' + x)
+		}
+	} else {
+		dt = b*b - 4*a*c;
+		if(dt < 0) {
+			alert('Phuong trinh vo nghiem')
+		} else if(dt == 0) {
+			x = -b/(2*a)
+			alert('Nghiem phuong trinh x1 = x2 = ' + x)
+		} else {
+			x1 = (-b + Math.sqrt(dt))/(2*a)
+			x2 = (-b - Math.sqrt(dt))/(2*a)
+			alert(`Nghiem x1 = ${x1}, x2 = ${x2}`)
+		}
+	}
+    </script>
+</body>
+</html>
